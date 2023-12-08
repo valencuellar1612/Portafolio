@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
 </head>
 <body>
     <div class="container">
-        <div class='container1'>
-            <ul class='menu'>
-              <li class='menu__name'><a class='menu__name' href="#home">Home</a></li>
-              <li class='menu__name'><a class='menu__name' href="#aboutMe">Sobre mí</a></li>
-              <li class='menu__name'><a class='menu__name' href="#skills">Habilidades</a></li>
-              <li class='menu__name'><a class='menu__name' href="#portafolio">Portafolio</a></li>
-              <li class='menu__name'><a class='menu__name' href="#educacion">Educación</a></li>
-              <li class='menu__name'><a class='menu__name' href="#contacto">Contáctame</a></li>
+        <nav class='container1'>
+            <ul class='menu active'>
+              <li class='menu__name'><a class='menu__name' href="#home"><box-icon color="#00343F"name='home'></box-icon></i>Home</a></li>
+              <li class='menu__name'><a class='menu__name' href="#aboutMe"><box-icon color="#00343F" name='user'></box-icon>Sobre mí</a></li>
+              <li class='menu__name'><a class='menu__name' href="#skills"><box-icon color="#00343F" name='code-alt'></box-icon>Habilidades</a></li>
+              <li class='menu__name'><a class='menu__name' href="#portafolio"><box-icon color="#00343F" name='paper-plane'></box-icon>Portafolio</a></li>
+              <li class='menu__name'><a class='menu__name' href="#educacion"><box-icon color="#00343F" type='solid' name='graduation'></box-icon>Educación</a></li>
+              <li class='menu__name'><a class='menu__name' href="#contacto"><box-icon color="#00343F" name='mail-send'></box-icon>Contáctame</a></li>
             </ul> 
-          </div>
+            <button class="header__btn">
+                <box-icon name='menu' color='#00343F' size="lg"  ></box-icon>
+            </button>
+        </nav>
          <div class="container2">
                 <article id="home">
                     <div class="container__home">
@@ -115,10 +119,12 @@
                         <h2 class="educacion__title">Educación</h2>
                         <ul class="educacion__cont">
                             <li class="educacion1">
+                                    <img class="educacion__logo" src="./img/academlo.png" alt="">
                                     <h4 class="educacion__name" >Academlo School of Technology and computer science</h4>
                                     <p class="educacion__text">Front-End Development with React</p>
                             </li>
                             <li class="educacion1">
+                                <img class="educacion__logo1" src="./img/caldas.png" alt="">
                                 <h4 class="educacion__name" >Universidad de Caldas</h4>
                                 <p class="educacion__text">Ingeniera Mecatrónica</p>
                             </li>
@@ -136,7 +142,8 @@
                         </ul>
                     </div>
                 </article>
-        </div>
+         </div>
     </div>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
