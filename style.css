@@ -46,6 +46,7 @@ button{
 }
 .container2{
     background-color: #fff0ff;
+    width: 100%;
 }
 .menu{
     display: grid;
@@ -104,12 +105,14 @@ button{
     margin-top: 40px;
     font-size: 28px;
     display: block;
-    white-space: nowrap;
-    border-right: 4px solid;
-    width: 41ch;
-    animation: typing 3.5s steps(41), blink .5s infinite step-end alternate;
-    overflow: hidden;
     margin-bottom: 40px;
+}
+.home__pa:hover{
+    color: rgb(14, 69, 80);
+    transform: scale(1.2);
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+    filter: brightness(2.2);
 }
 @keyframes typing {
     from {width: 0}
@@ -380,9 +383,13 @@ button{
     margin-top: 10px;
 }
 @media (max-width: 800px) {
-    .menu{
-        display: none;
-    }
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.menu{
+    display: none;
+}
 .container1{
     display: flex;
     justify-content: flex-end;
@@ -406,7 +413,7 @@ button{
     right: 0;
     transition: right .5s linear;
     border: 1px solid white;
-    background-color: #dbb6ee
+    background-color: #dbb6ee;
 }
 .menu.active{
     right:-100%;
